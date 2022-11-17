@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+SWAPI
+{% endblock %}
+
+{% block content %}
+
+<h1>Star Wars Character Search</h1>
+<form action="/results" method="GET">
+    <fieldset>
+        <legend>Learn more about your favourite Star Wars characters:</legend>
+
+        <p>
+            <label>
+                Enter the character ID:
+
+                <input type="text" name="character_id">
+            </label>
+        </p>
+
+        <input id="submit" type="submit" value="Search">
+    </fieldset>
+</form>
+
+{% endblock %}
